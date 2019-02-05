@@ -18,8 +18,26 @@ public class SortingAlgorithmsTest {
     }
 
     @Test
-    public void insertionSort() {
+    public void insertionSortTest() {
         int[] unsortedArray = new int[]{5, 2, 4, 1, 3};
         Assert.assertArrayEquals(algorithms.insertionSort(unsortedArray), new int[]{1, 2, 3, 4, 5});
+    }
+
+    @Test
+    public void insertionSortOrderedArrayTest() {
+        int[] sortedArray = new int[]{1, 2, 3, 4, 5};
+        Assert.assertArrayEquals(algorithms.insertionSort(sortedArray), new int[]{1, 2, 3, 4, 5});
+    }
+    @Test
+    public void insertionSortNonUniqueValuesTest() {
+        int[] sortedArray = new int[]{1, 1, 3, 4, 5};
+        Assert.assertArrayEquals(algorithms.insertionSort(sortedArray), new int[]{1, 1, 3, 4, 5});
+    }
+
+
+    @Test
+    public void insertionSortEmptyArrTest() {
+        int[] unsortedArray = new int[]{};
+        Assert.assertArrayEquals(algorithms.insertionSort(unsortedArray), new int[]{});
     }
 }
