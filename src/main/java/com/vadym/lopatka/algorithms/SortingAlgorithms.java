@@ -2,22 +2,21 @@ package com.vadym.lopatka.algorithms;
 
 public class SortingAlgorithms {
 
-    public int[] insertionSort(int[] unsortedArray) {
-        if (unsortedArray.length <=0)
-            return unsortedArray;
+    public int[] insertionSort(int[] arrayToSort) {
+        if (arrayToSort.length <=0)
+            return arrayToSort;
 
-        int[] sortedArray = new int[unsortedArray.length];
-        for (int i = 0; i < unsortedArray.length; i++) {
-            int currentValue = unsortedArray[i];
+        for (int i = 1; i < arrayToSort.length; i++) {
+            int currentValue = arrayToSort[i];
 
             int previousPosition = i-1;
-            while (previousPosition > 0 && unsortedArray[previousPosition] > currentValue) {
-                sortedArray[previousPosition+1]=unsortedArray[previousPosition];
+            while (previousPosition >= 0 && arrayToSort[previousPosition] > currentValue) {
+                arrayToSort[previousPosition+1]=arrayToSort[previousPosition];
                 previousPosition = previousPosition -1;
             }
-            sortedArray[previousPosition+1] = currentValue;
+            arrayToSort[previousPosition+1] = currentValue;
         }
 
-        return sortedArray;
+        return arrayToSort;
     }
 }
