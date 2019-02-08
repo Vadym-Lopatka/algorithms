@@ -2,12 +2,12 @@ package com.vadym.lopatka.algorithms.sort;
 
 public class MergeSort {
 
-    public int[] sort(int[] arrayToSort, OrderType orderType) {
+    public static int[] sort(int[] arrayToSort, OrderType orderType) {
         return doMergeSort(arrayToSort, 0, arrayToSort.length / 2, arrayToSort.length);
     }
 
     // A, p ,q, r
-    private int[] doMergeSort(int[] arrayToSort, int start, int middle, int finish) {
+    private static int[] doMergeSort(int[] arrayToSort, int start, int middle, int finish) {
         int[] firstPart = new int[middle - start + 1];
         int[] secondPart = new int[finish - middle];
 

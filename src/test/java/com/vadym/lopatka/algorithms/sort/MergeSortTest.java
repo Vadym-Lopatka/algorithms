@@ -1,24 +1,16 @@
 package com.vadym.lopatka.algorithms.sort;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 public class MergeSortTest {
-    private MergeSort algorithm;
-
-    @Before
-    public void before() {
-        algorithm = new MergeSort();
-    }
-
 
     @Test
     public void insertionSortTest() {
         int[] unsortedArray = new int[]{5, 12, 40, 1, 8};
         Assert.assertArrayEquals(
                 new int[]{1, 5, 8, 12, 40},
-                algorithm.sort(unsortedArray, OrderType.ASK)
+                MergeSort.sort(unsortedArray, OrderType.ASK)
         );
     }
 
