@@ -1,4 +1,4 @@
-package com.vadym.lopatka.algorithms;
+package com.vadym.lopatka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
