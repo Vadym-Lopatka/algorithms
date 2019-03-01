@@ -23,6 +23,8 @@ repositories {
 }
 
 dependencies {
+    compileOnly "org.projectlombok:lombok:1.18.16"
+
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
