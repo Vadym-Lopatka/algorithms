@@ -4,6 +4,15 @@ import java.util.Arrays;
 
 public class Recursion {
 
+    /**
+     * Sum all integers in the array.
+     *
+     * It is clear that it is more effective to do it with a loop.
+     * But I did it to show the approach with recursion.
+     *
+     * @param array
+     * @return - the sum of the integers of the array
+     */
     public static int sum(int[] array) {
         int length = array.length;
 
