@@ -3,6 +3,7 @@ package com.vadym.lopatka.dataStructures;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 import static org.junit.Assert.assertEquals;
@@ -31,7 +32,6 @@ public class BinaryTreeTest {
 
     @Test
     public void addTest() {
-        BinaryTree binaryTree = new BinaryTree();
         assertTrue(binaryTree.add(MIN_VALUE));
     }
 
@@ -49,13 +49,19 @@ public class BinaryTreeTest {
     public void getHighestTest() {
         assertEquals(MAX_VALUE, binaryTree.getHighest());
     }
-//
-//    @Test
-//    public void orderTest() {
-//
-//        // todo:
-//        //print in-order
-//        //print pre-order
-//        //print post-order
-//    }
+
+    @Test
+    public void inOrderTraversalTest() {
+        assertEquals(Arrays.asList(1, 2, 3, 4, 5, 6, 7), binaryTree.inOrderTraversal());
+    }
+
+    @Test
+    public void preOrderTraversalTest() {
+        assertEquals(Arrays.asList(4, 2, 1, 3, 6, 5, 7), binaryTree.preOrderTraversal());
+    }
+
+    @Test
+    public void postOrderTraversalTest() {
+        assertEquals(Arrays.asList(1, 3, 2, 5, 7, 6, 4), binaryTree.postOrderTraversal());
+    }
 }
