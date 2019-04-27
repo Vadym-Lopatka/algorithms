@@ -1,12 +1,7 @@
 package com.vadym.lopatka.dataStructures.graph;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+public interface Graph<S> {
 
-import java.util.List;
+    Vertex<S> addVertex(S vertex);
 
-@Data
-public class Graph {
-    List<Node> nodes;
 }
