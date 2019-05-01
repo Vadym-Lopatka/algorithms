@@ -13,34 +13,4 @@ public class MergeSortTest {
                 new int[]{1, 5, 8, 12, 40}, unsortedArray
         );
     }
-
-//    @Test
-//    public void insertionSortOrderedArrayTest() {
-//        int[] sortedArray = new int[]{1, 2, 3, 4, 5};
-//        Assert.assertArrayEquals(
-//                new int[]{1, 2, 3, 4, 5},
-//                algorithm.sort(sortedArray, OrderType.ASK)
-//        );
-//    }
-//
-//    @Test
-//    public void insertionSortNonUniqueValuesTest() {
-//        int[] sortedArray = new int[]{1, 1, 3, 4, 5};
-//        Assert.assertArrayEquals(
-//                new int[]{1, 1, 3, 4, 5},
-//                algorithm.sort(sortedArray, OrderType.ASK)
-//        );
-//    }
-//
-//
-//    @Test
-//    public void insertionSortEmptyArrTest() {
-//        int[] unsortedArray = new int[]{};
-//        Assert.assertArrayEquals(
-//                new int[]{},
-//                algorithm.sort(unsortedArray, OrderType.ASK)
-//        );
-//    }
-
-
 }
