@@ -36,8 +36,7 @@ public class MaxHeap {
         }
     }
 
-    private void swap(int fpos, int spos)
-    {
+    private void swap(int fpos, int spos) {
         int tmp;
         tmp = store[fpos];
         store[fpos] = store[spos];

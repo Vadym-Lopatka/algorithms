@@ -1,10 +1,5 @@
 package com.vadym.lopatka.interestingTasks;
 
-import java.util.AbstractSequentialList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Optional;
-
 public class LinkedListOperations {
 
     public static LinkedNode sumTwoLists(LinkedNode first, LinkedNode second) {
@@ -30,31 +25,4 @@ public class LinkedListOperations {
 
         return head.next;
     }
-
-    // O(1) space && O(n^2) time
-    public LinkedNode getKthElementToLast(LinkedNode node, int k) {
-
-        while (node.next != null) {
-//            iterator.next().va
-        }
-
-        return node;
-    }
-
-    /*private static LinkedNode doSum(LinkedNode tempHead, LinkedNode next, LinkedNode first, LinkedNode second, int additionalValue) {
-
-        if (first.getNext() != null || second.getNext() != null) {
-
-            int sum = additionalValue + first.getValue() + second.getValue();
-            LinkedNode newOne = new LinkedNode(sum % 10);
-            if (next == null)
-                next = newOne;
-            else {
-                next.setNext(newOne);
-            }
-            tempHead.setNext(doSum(tempHead, next, first.getNext(), second.getNext(), sum / 10));
-        }
-
-        return tempHead.getNext();
-    }*/
 }

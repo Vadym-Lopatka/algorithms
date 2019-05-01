@@ -4,8 +4,9 @@ public class MergeSort {
 
     /**
      * the most popolar implementation of merge sort
+     *
      * @param arrayToSort - the array that will be sorted
-     * @param length - array's length
+     * @param length      - array's length
      */
     public static void sort(int[] arrayToSort, int length) {
 
@@ -36,8 +37,7 @@ public class MergeSort {
         while (i < leftBorder && j < rightBorder) {
             if (leftPart[i] <= rightPart[j]) {
                 arrayToSort[k++] = leftPart[i++];
-            }
-            else {
+            } else {
                 arrayToSort[k++] = rightPart[j++];
             }
         }
@@ -48,11 +48,6 @@ public class MergeSort {
             arrayToSort[k++] = rightPart[j++];
         }
     }
-
-
-
-
-
 
 
 //

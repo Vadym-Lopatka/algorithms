@@ -4,9 +4,9 @@ package com.vadym.lopatka.dataStructures;
  * Stack
  */
 public class LiFoLinkedListImpl implements MyLinkedList {
+    private static final int defaultStoreSize = 2;
     private int[] store;
     private int size;
-    private static final int defaultStoreSize = 2;
 
     public LiFoLinkedListImpl() {
         this(defaultStoreSize);
@@ -26,14 +26,6 @@ public class LiFoLinkedListImpl implements MyLinkedList {
         size++;
     }
 
-    private void increaseStoreCapacity() {
-        int newCapacity = store.length * 2;
-        int[] ints = new int[newCapacity];
-        System.arraycopy(this.store, 0, ints, 0, store.length);
-
-        this.store = ints;
-    }
-
     @Override
     public int get() {
         int index = size - 1;
@@ -46,6 +38,14 @@ public class LiFoLinkedListImpl implements MyLinkedList {
     @Override
     public int getSize() {
         return size;
+    }
+
+    private void increaseStoreCapacity() {
+        int newCapacity = store.length * 2;
+        int[] ints = new int[newCapacity];
+        System.arraycopy(this.store, 0, ints, 0, store.length);
+
+        this.store = ints;
     }
 
     private void removeElement(int index) {

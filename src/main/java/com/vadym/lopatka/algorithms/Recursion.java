@@ -6,7 +6,7 @@ public class Recursion {
 
     /**
      * Sum all integers in the array.
-     *
+     * <p>
      * It is clear that it is more effective to do it with a loop.
      * But I did it to show the approach with recursion.
      *

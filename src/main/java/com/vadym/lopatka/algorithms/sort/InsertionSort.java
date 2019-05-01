@@ -40,4 +40,9 @@ public class InsertionSort {
 
         return arrayToSort;
     }
+
+    public enum OrderType {
+        ASK,
+        DESK
+    }
 }

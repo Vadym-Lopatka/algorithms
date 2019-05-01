@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import static com.vadym.lopatka.algorithms.Recursion.sum;
-import static org.junit.Assert.*;
 
 public class RecursionTest {
 

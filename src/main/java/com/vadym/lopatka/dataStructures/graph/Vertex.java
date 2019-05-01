@@ -1,4 +1,4 @@
-package com.vadym.lopatka.dataStructures.graph;
-
-public class Vertex<S> {
-}
+//package com.vadym.lopatka.dataStructures.graph;
+//
+//public class Vertex<S> {
+//}

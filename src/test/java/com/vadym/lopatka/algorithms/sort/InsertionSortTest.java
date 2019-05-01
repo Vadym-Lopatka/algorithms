@@ -1,5 +1,6 @@
 package com.vadym.lopatka.algorithms.sort;
 
+import com.vadym.lopatka.algorithms.sort.InsertionSort.OrderType;
 import org.junit.Assert;
 import org.junit.Test;
 
