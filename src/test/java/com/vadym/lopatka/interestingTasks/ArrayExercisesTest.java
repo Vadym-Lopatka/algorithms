@@ -7,7 +7,10 @@ import org.junit.Test;
 public class ArrayExercisesTest {
 
     @Test
-    public void getMissingElementTest() {
-//        Assert.assertEquals(3, getMissingElement(new int[]{1, 2, 4, 5}, new int[]{5, 4, 2, 1}));
+    public void rotationLeftTest() {
+        Assert.assertArrayEquals(
+                new int[]{5, 1, 2, 3, 4},
+                ArrayExercises.rotationLeft(new int[]{1, 2, 3, 4, 5}, 4)
+        );
     }
 }
